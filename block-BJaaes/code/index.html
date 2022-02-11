@@ -5,9 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Form Validation 👇</title>
-  </head>
+    <script src="https://kit.fontawesome.com/6ea53cfc39.js" crossorigin="anonymous"></script>  </head>
   <body>
-   
+
+    
+   <form>
+       <div class="heading">
+         Create your account
+       </div>
+       <div class="inside">
+            <label>Username</label>
+            <input
+            type="text"
+            name="username"
+            placeholder="Type your username here..."
+            >
+            <error></error>
+       </div>
+       <div class="inside">
+        <label>Name</label>
+        <input
+        type="text"
+        name="name"
+        placeholder="Type your name here..."
+        >
+        <error></error>
+   </div>
+   <div class="inside">
+    <label>E-mail ID</label>
+    <input
+    type="email"
+    name="email"
+    placeholder="Type your E-mail here..."
+    >
+    <error></error>
+</div>
+<div class="inside">
+  <label>Age</label>
+  <input
+  type="number"
+  name="Age"
+  placeholder="Type your Age here..."
+  >
+  <error></error>
+</div>
+       <button>Submit</button>
+   </form>
+
+
     <script src="./script.js"></script>
   </body>
 </html>

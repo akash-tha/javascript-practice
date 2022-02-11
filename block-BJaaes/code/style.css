@@ -10,6 +10,10 @@ html {
 *:after {
   box-sizing: inherit;
 }
+body
+{
+  background-color: rgb(44, 145, 228);
+}
 
 body,
 h1,
@@ -34,4 +38,137 @@ ul {
 img {
   max-width: 100%;
   height: auto;
+}
+/* .main
+{
+  border: 1px solid black;
+  background-color: rgb(253, 253, 253);
+}
+.container
+{
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.inside
+{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.account
+{
+  background-color: rgb(179, 176, 176);
+  color: black;
+  font-weight: 600;
+  padding: 25px;
+  font-size: 30px;
+
+}
+.inside input
+{
+  padding: 10px 6px;
+  border-radius: 6px;
+  border: 1px solid rgb(56, 55, 55);
+}
+button
+{
+  background-color: rgb(235, 52, 52);
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  text-align: center;
+width: 100%;
+border: none;
+padding: 20px 00;
+}
+label
+{
+  font-size: 18px;
+  color: black;
+  font-weight: 500;
+} */
+/* input:required
+{
+border:3px solid red;
+}
+input:valid
+{
+border:3px solid green;
+}
+input:invalid
+{
+border:3px dashed red ;
+} */
+/* small
+{
+  color: red;
+}
+i
+{
+  color: black;
+  font-size: 30px;
+} */
+/* .error
+{
+  border: 2px solid red;
+}
+.success
+{
+  border: 2px solid rgb(34, 233, 8);
+} */
+
+form{
+  width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(43, 42, 42);
+  background-color: white;
+  margin-top: 30px;
+
+}
+.heading
+{
+  background-color: rgb(214, 203, 203);
+  color: rgb(27, 26, 26);
+  font-size: 25px;
+  margin-bottom: 13px;
+  padding: 15px 6px;
+}
+.inside
+{
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+}
+input
+{
+  padding: 10px 6px;
+  border-radius: 6px;
+  border: 1px solid rgb(56, 55, 55);
+
+
+}
+button
+{
+  background-color: rgb(200, 41, 41);
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  padding: 6px 4px;
+  margin-top: 12px;
+  border: none;
+}
+input
+{
+  padding: 8px 4px;
+  border: 1px solid grey;
+}
+.error
+{
+  border: 2px solid red;
+}
+.success
+{
+  border: 2px solid rgb(35, 233, 9);
 }
