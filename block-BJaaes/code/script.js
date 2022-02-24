@@ -1,65 +1,75 @@
 
 
-let form =document.querySelector("form");
-
-
 function doescontainaNumber(str)
 {
     return str.split('').some(e=>Number(e))
 }
 
-function check(str)
+
+
+let form=document.querySelector("form")
+
+errorMsg="";
+
+function function1(Event)
+{
+    Event.preventDefault();
+
+    let name=Event.target.elements.name;
+    let email=Event.target.elements.email;
+    let password=Event.target.elements.password;
+    let confirmpassword=Event.target.elements.confirmpassword;
+
+
+    function check(str)
     {
         if(str.value==="")
         {
-            errorMsg="name can't be left blank";
+            errorMsg="value can't be left blank";
             str.classList.add("error");
+            str.classList.remove("success");
         }
-        
+       
         else
         {
               errorMsg="";
-            str.classList.add("success");
+              str.classList.add("success");
+              str.classList.remove("error");
         }
         str.nextElementSibling.innerText=errorMsg;
-        
+ }
 
-    }
+     check(name);
+     check(email);
 
-let errorMsg="";
-
-function accessValue(event)
-{
-    event.preventDefault();
-    let username=event.target.elements.username;
-    let user=event.target.elements.name;
-    let useremail=event.target.elements.email;
-    let userage=event.target.elements.Age;
-
-
-    if(username.value==="")
+     if(password.value!==confirmpassword.value)
+     {
+        errorMsg="password mismatch";
+        password.classList.add("error");
+        password.classList.remove("success");
+     }
+     else if(!doescontainaNumber(password.value))
     {
-        errorMsg="username can't be left blank";
-        username.classList.add("error");
+        errorMsg="password must contain a numeric value";
+        password.classList.add("error");
+        password.classList.remove("success");
+
 
     }
-    else if(!doescontainaNumber(username.value))
-    {
-        errorMsg="username must contain a numeric value";
-        username.classList.add("error");
+     else
+     {
+        errorMsg="";
+        password.classList.add("success");
+        password.classList.remove("error");
 
-    }
-    else
-    {
-          errorMsg="";
-        username.classList.add("success");
-    }
-    
-    username.nextElementSibling.innerText=errorMsg;
-    check(user);
-    check(useremail);
-    check(userage);
-       
+     }
+     confirmpassword.nextElementSibling.innerText=errorMsg;
+     console.log(password.value);
+     console.log(confirmpassword.value);
+
+   
+
 }
 
-form.addEventListener("submit",accessValue);
+
+form.addEventListener("submit",function1)
