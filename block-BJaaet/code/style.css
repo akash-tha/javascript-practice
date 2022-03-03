@@ -30,6 +30,8 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+    font-family: 'Hubballi', cursive;
+font-family: 'Raleway', sans-serif;
 }
 ol, ul {
 	list-style: none;
@@ -53,6 +55,8 @@ table {
     margin: 0 auto;
     background-color: rgb(7, 4, 46);
     padding: 20px 00;
+    border-radius: 15px;
+    margin-top: 50px;
 
 }
 .heading
@@ -70,6 +74,8 @@ table {
     margin-left: 23px;
     padding: 14px 5px;
     margin-bottom: 6px;
+    font-size: 20px;
+    color: rgb(53, 52, 52);
 }
 
 .blocks
@@ -79,9 +85,30 @@ table {
     justify-content: space-between;
     font-size: 22px;
     color: rgb(5, 4, 4);
-    border-bottom: 2px dashed black;
-    background-color: rgb(139, 163, 103);
+    background-color: rgb(190, 219, 141);
     width: 90%;
     margin-left: 23px;
     padding: 15px 5px;
+    border-bottom: 1px solid rgb(100, 99, 99);
+}
+.hello
+{
+    background-color: rgb(65, 235, 31);
+    border: 2px solid balck;
+    border-radius: 6px;
+    padding: 6px 10px;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    width: 20%;
+    margin-left: 23px;
+    margin-top: 20px;
+}
+
+.errormsg
+{
+    color: red;
+    font-size: 18px;
+    margin-left: 23px;
+     padding: 20px 00;
 }
