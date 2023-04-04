@@ -33,61 +33,17 @@ img {
   max-width: 100%;
   height: auto;
 }
-
-body {
-  background: #f2f4f8;
-  height: 100%;
-  font-family: "Montserrat", sans-serif;
-  width: 100vw;
-  height: 100vh;
+.box
+{
+  width: 4rem;
+  height: 4rem;
+  border: 2px solid black;
+  border-radius: 3px;
+  margin: 5px;
 }
-
-.container {
-  text-align: center;
-  height: 100%;
-  max-width: 1280px;
-  padding: 5rem;
-  margin: 0 auto;
-}
-h1 {
-  padding-bottom: 10px;
-}
-
-.banner {
-  display: inline-block;
-  color: #424242;
-  font-size: 20px;
-  text-decoration: none;
-  text-align: center;
-  margin: 20px auto;
-  padding: 10px 20px;
-  background: white;
-  border-radius: 4px;
-  min-width: 24px;
-  font-size: 20px;
-  box-shadow: 0 14px 26px rgba(0, 0, 0, 0.04);
-  border: 2px solid;
-}
-
-.boxes {
+.boxes
+{
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-}
-.box {
-  border: 4px solid firebrick;
-  height: 100%;
-  width: 50%;
-}
-.text {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  flex-wrap: wrap;
 
-.first {
-  margin-right: 20px;
 }
