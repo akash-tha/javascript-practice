@@ -1,49 +1,168 @@
-html {
-  box-sizing: border-box;
-  font-size: 16px;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ol,
-ul {
-  margin: 0;
-  padding: 0;
-  font-weight: normal;
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-.box
+/* .part-2-box
 {
-  width: 4rem;
-  height: 4rem;
-  border: 2px solid black;
-  border-radius: 3px;
-  margin: 5px;
+   
+    background-color: rgb(83, 12, 12);
+    border-radius: 8px;
+    color: white;
+    font-size: 26px;
+    font-weight: 600;
+    padding: 25px 75px;
+    text-align: center;
+    
 }
-.boxes
+.part-2
 {
-  display: flex;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+.main-div
+{
+    width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.part-3
+{
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+.part-3-box
+{
+    background-color: rgb(133, 133, 133);
+    border-radius: 8px;
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 25px 75px;
+    margin: 9px 00px;
+}
+.part-3-a
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 73%;
+}
+.part-3-b-box
+{
+    padding: 25px 80px;
+    background-color: rgb(18, 153, 216);
+    border-radius: 8px;
+    height: 300px;
+    margin: 8px 00;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 26px;
+}
+.part-1
+{
+    background-color: black;
+    border-radius: 8px;
+    padding: 35px 00;
+    margin-bottom: 8px;
+} */
 
+
+
+.main-div
+{
+    border: 2px solid black;
+    width: 700px;
+    margin: 0 auto;
+}
+.display
+{
+    background-color: black;
+    padding: 30px 00;
+    color: white;
+    font-weight: 600;
+    border-radius: 8px;
+    margin-bottom: 7px;
+    text-align: end;
+    font-size: 30px;
+}
+button
+{
+    width: 23%;
+    margin: 8px 00;
+    padding: 10px 00;
+    background-color: rgb(168, 163, 163);
+    color: black;
+    font-weight:600 ;
+    border: none;
+    border-radius: 8px;
+    font-size: 30px;
+}
+.buttons
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.clear
+{
+    background-color: rgb(216, 155, 81);
+}
+.equalsto
+{
+    background-color: rgb(18, 228, 200);
+}
+.addition, .subtraction,.multiply,.devide
+{
+    background-color: rgb(123, 32, 241);
 }
