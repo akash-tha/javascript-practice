@@ -4,33 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Movie Watch List</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Hubballi&family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="main">
-         
-       <div class="heading">
-            Movie watch list
-       </div>
-       <input class="input2"
-       type="text"
-       name="movie-name"
-       placeholder="type movie name here...">
-       <span class="errormsg"></span>
-       <ul class="list"></ul>
-
-       <div class="buttons">active</div>
-         <button class="Active hello">Active</button>
-         <button class="Completed hello">Completed</button>
-         <button class="ShowAll hello">ShowAll</button>
-         <button class="ClearAll hello">ClearAll</button>
-      </div>
-
-    <script src="./script.js"></script>
+    <form action="">
+        <div class="main">
+          <div class="heading">Movie Watch List</div>
+          <input
+            class="input2"
+            type="text"
+            name="movie"
+            placeholder="type movie name here.."
+          />
+          <span class="errormsg" name="errormsg"></span>
+          <ul class="list" name="list"></ul>
+    
+          <div class="buttons">
+            <button class="Add hello" type="submit">Add</button>
+            <button class="Completed hello">Completed</button>
+            <button class="ShowAll hello">Show All</button>
+            <button class="ClearAll hello">Clear All</button>
+          </div>
+        </div>
+        <script src="./script.js"/>
+    </form>
   </body>
 </html>
-
